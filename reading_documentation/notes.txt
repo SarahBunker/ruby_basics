@@ -1,0 +1,78 @@
+/rb_basics_exercises/reading_documentation/notes.txt
+
+########################################
+Methods Without Arguments
+How would you use String#upcase to create an uppercase version of the string "xyz"?
+"xyz".upcase
+
+upcase → new_str
+
+to the left of the arrow is how the method is called
+to the right of the arrow is what the method returns
+
+instance methods need to be applied to an object > prepend the string with (.) (method name)
+
+new_xxxxx means that the method is not distructive because it is working with a copy
+
+#######################################
+Required Arguments
+
+Assume you have this Array:
+a = %w(a b c d e)
+How would you use Array#insert to insert the numbers 5, 6, and 7 between the elements with values 'c' and 'd'?
+
+--
+b = %w(5 6 7)
+a.insert(2,b).flatten
+
+I created an array with the new numbers
+I then inserted them and then flattened it.
+
+solution
+a.insert(3, 5, 6, 7)
+--
+
+in the documentation for array it has
+insert(index, obj...) → ary
+  the index is required because it has no ornamentation.
+    the index is the index before we want to insert
+  the object is 0 or more because of the ...
+    obj or [obj] can also mean 0 or more
+    
+do we have to do anything with the return value?
+  no because it modifys the original array
+
+#############################################
+Optional Arguments
+
+Assume you have the following code:
+
+s = 'abc def ghi,jkl mno pqr,stu vwx yz'
+puts s.split.inspect
+puts s.split(',').inspect
+puts s.split(',', 2).inspect
+
+What will each of the 3 puts statements print?
+
+.split defaults to splitting on spaces
+or you can give it a value or you can give it a # of sub groups
+
+Solution
+split(pattern=nil, [limit]) → an_array
+two ways to show optional arguements
+  pattern = nil
+    optional arguement has a default value
+  [limit]
+    optional arguement with no default value
+    sometimes have [] around optional arguements with default values, shown later
+if no arguements are given uses nil
+  uses $ which is a global variable
+    explained later
+    default value is nil
+  split on whitespace " "
+You can pass a value to split on, either a string or regexp
+You can pass a limit to the number of subgroups
+
+returns an array (array created and returned by method
+  does not mutate string
+  

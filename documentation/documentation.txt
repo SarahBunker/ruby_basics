@@ -1,0 +1,105 @@
+##############################
+where to find documentation
+
+core API is stuff you can use without importing
+  object, string, array..
+
+Standard library API
+  available classes and modules
+  must be imported into program
+    import using require
+  Classes
+  Set
+  Date
+  JSON
+  YAML
+  
+  Modules
+  Singleton
+  Find
+  
+No separate section for just the language
+  look for new to ruby links > couldn't find
+  ruby-doc.org
+    
+  
+#####################################
+While loops
+
+Select the core API link for your version of ruby.
+Select the "control expressions" link.
+Search within the page for "while" until you find the "while loop" discussion.
+
+# Finding while from docs.ruby_lang.org
+I like going to the pages tab to be able to search for topics like this
+#
+
+#########################
+Return Value of while
+
+A while loop returns nill unless there is a break statement inside the while loop
+
+################
+Return value of break
+
+------------------
+result = [1, 2, 3].each do |value|
+  break value * 2 if value.even?
+end
+
+p result # prints 4
+------------------
+
+you can give a value to break to return when breaking
+
+while loops return nil unless break is given value
+if break is given an expression it returns the value of that expression
+if break is not given an expression it returns nil
+
+could also find this out using irb or ruby program
+
+##############
+Large Numbers
+
+stuff on numbers is found in literals
+1234 = 1_234 = 1.234E3
+you can place an underscore anywhere in a number
+It can be used to increase readability, using like commas
+You can use an _ in floating point numbers as well
+1.234_567
+
+#################
+Symbol Syntax
+still on literals page
+
+I would create a symbol using a colon like this
+:Sarah
+
+##############
+String Classes
+classes are on the main page, then go to the classes tab, then searched for string
+
+on ruby-doc.org you can get there by
+  from the core page go to the classes tab in the upper left corner
+  then use the search on the top bar, search for string
+  
+if you are on the specific 2.6.3
+  then on the main api core you can scroll down to the class
+  use the filter
+  and select string
+  
+two types of methods
+  instance
+    instance will have a # at the start
+    this is what we use a lot in the start of the class
+  class
+    class methods have a :: at the start
+    we will use these more later
+  # and :: just show what type of method they are, they are not needed to call the method anyway
+  launch school material will also use this.
+
+#############
+Right Justifying Strings
+
+rjust(integer,padstr='') > new string
+  returns a new string with str righ justified and padded with padstr
