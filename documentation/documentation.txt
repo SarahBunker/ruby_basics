@@ -19,7 +19,7 @@ Standard library API
   Find
   
 No separate section for just the language
-  look for new to ruby links > couldn't find
+  look for new to ruby links > couldn't find > found
   ruby-doc.org
     
   
@@ -103,3 +103,5 @@ Right Justifying Strings
 
 rjust(integer,padstr='') > new string
   returns a new string with str righ justified and padded with padstr
+  
+ANKI

@@ -116,7 +116,7 @@ end
 puts a
 
 puts "a = 3"
-puts ".each does not create a separate scope so a defined at the top can be accessed from inside the itteration"
+puts ".each does not create a separate scope so a defined at the top can be accessed from inside the iteration"
 
 =begin
 in method definitions the variables are limited to the inside unless they call a method that references outside
@@ -226,3 +226,5 @@ kinda
 so the was an error with the a , "undifined local var"
 a can't reach outside the function scope so it is now an unitialized var
 =end
+
+#ANKI
