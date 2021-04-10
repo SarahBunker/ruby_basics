@@ -1,0 +1,69 @@
+#1
+
+def count_sheep
+  5.times do |sheep|
+    puts sheep
+  end
+end
+
+puts count_sheep
+
+returns
+
+0
+1
+2
+3
+4
+5
+
+the 0 through 4 were printed in the .times loop
+
+5 was returned from the .times because it was the
+number .times was called on, so this is the number that puts printed as the return value of the function
+
+#ANKI
+
+#2
+
+def count_sheep
+  5.times do |sheep|
+    puts sheep
+  end
+  10
+end
+
+puts count_sheep
+
+returns
+
+0
+1
+2
+3
+4
+10
+
+because .times is no longer the last thing that was evaluated 10 was
+
+#3
+
+def count_sheep
+  5.times do |sheep|
+    puts sheep
+    if sheep >= 2
+      return
+    end
+  end
+end
+
+p count_sheep
+
+0
+1
+2
+nil
+
+# the return statement didn't provide a value so the value is nil
+
+#ANKI

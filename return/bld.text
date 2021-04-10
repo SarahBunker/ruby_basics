@@ -1,0 +1,55 @@
+#1
+Breakfast
+#2
+Evening
+#3
+Breakfast
+#4
+
+
+def meal
+  puts 'Dinner'
+  return 'Breakfast'
+end
+
+puts meal
+
+Dinner WRONG
+prints dinner, but returns breakfast 
+
+Solution
+there are two puts so more then one statement will be printed
+Dinner
+Breakfast
+
+#ANKI
+
+#5
+
+def meal
+  'Dinner'
+  puts 'Dinner'
+end
+
+p meal
+
+Dinner
+Dinner WRONG
+
+Solution
+Dinner
+nil
+
+the return of meal is the evaluated result of last line,
+the return of puts is nil
+
+puts doesn't show the nil
+p does
+
+#ANKI
+
+#6
+
+Breakfast
+
+return immediately exits the method and no further code from the method is executed.
