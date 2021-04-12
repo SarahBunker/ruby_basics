@@ -17,7 +17,6 @@ answer =  if status == 'awake'
 
 puts answer
 
-#ANKI
 
 =begin
 code changed so there were not puts statement inside of the loop and instead it was just printed outside of the loop once
@@ -26,3 +25,5 @@ I also changed the indentation so it was easier to see the if else statements
 Storing the result of the if statement to a variable and then printing at the end saves space because then you don't have to
   keep typing puts
 =end
+
+#ANKI
