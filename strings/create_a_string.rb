@@ -14,6 +14,8 @@ invoke the strings ::new class method
 Using a string literal
   empty_string = ''
 
-entered question about wether ::new and .new are the same
+entered question about whether ::new and .new are the same
 
 =end
+
+#ANKI
