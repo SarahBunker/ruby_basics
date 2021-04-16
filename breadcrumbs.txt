@@ -1,1 +1,1 @@
-rb_basics_exercises
+cd rb_basics_exercises/debugging
