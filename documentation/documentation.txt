@@ -105,3 +105,13 @@ rjust(integer,padstr='') > new string
   returns a new string with str righ justified and padded with padstr
   
 ANKI
+
+###############
+YAML::load_file
+
+load_file(filepath) ~ loads a documents from the file located at the file path
+
+require 'yaml'
+MESSAGES = YAML.load_file('calculator_messages.yml')
+
+this yaml was in the same folder as the calculator problem so I could just write it as the file name
